@@ -1,10 +1,10 @@
-# ☁️ Cloud Task Manager
+# Cloud Task Manager
 
 3522 Bulut Bilişim Dersi (Proje 1) kapsamında Çift Katmanlı (Dual-Tier) bir Web Uygulaması olarak geliştirilmiştir.
 
 Uygulama, modern **React** ile ön yüz (Frontend) ve **Node.js/Express** ile REST API sunucusu (Backend) olarak iki ayrı parça halinde tasarlanmıştır.
 
-## 🚀 Proje Mimarisi
+## Proje Mimarisi
 
 - **Frontend:** React + Vite, Glassmorphism CSS tasarımı (Mor ve Yeşil neon tema)
 - **Backend:** Node.js + Express (in-memory datastore)
@@ -12,7 +12,7 @@ Uygulama, modern **React** ile ön yüz (Frontend) ve **Node.js/Express** ile RE
 
 ---
 
-## 🛠 Kurulum ve Çalıştırma (Kendi Bilgisayarında)
+## Kurulum ve Çalıştırma (Kendi Bilgisayarında)
 
 ### 1. Backend Sunucusunu Ayağa Kaldırmak
 Backend klasörüne giderek servisleri kurun ve çalıştırın.
@@ -34,7 +34,7 @@ npm run dev
 
 ---
 
-## ☁️ AWS S3'e Yükleme (Deployment)
+##AWS S3'e Yükleme (Deployment)
 
 1. Frontend klasörüne gidip üretim versiyonunu (build) oluşturun:
    ```bash
@@ -65,14 +65,3 @@ npm run dev
 7. `dist` klasörü içerisindeki tüm dosyaları (klasörü değil, içindeki html ve css/js dosyalarını) bu S3 Bucket'ının içine sürükleyerek yükleyin (Upload).
 8. Artık AWS'nin size verdiği S3 Static Website adresine tıkladığınızda projeniz çalışır durumda olacaktır!
 
----
-
-## 💡 Sunum İçin Konuşma Planı (Öneri)
-
-**"Merhaba, bugün sizlere Bulut Bilişim dersi Çift Katmanlı Projem için hazırladığım Cloud Task Manager isimli web uygulamasını sunacağım.**
-
-**Projemin mimarisi; arka planda Node.js ve Express sunucusu üzerinde çalışan bir RESTful API'den ve bu sunucuyla sorunsuz haberleşen modern bir React.js önyüzünden oluşuyor.** 
-
-**Kullanıcı deneyimini artırmak için Mor ve Yeşil renklerinin kullanıldığı, transparan bir 'Glassmorphism' arayüz (cam efekti) kodladım. Projeyi lokalde test etmemin ardından Frontend kısmının yayın dosyasını (build) çıkardım ve Bulut tabanlı hizmetleri kullanabilmek adına projemin önyüzünü AWS S3 Static Booking ile tüm erişim ayarlarını (IAM Policy) yaparak bulut ortamından canlı olarak çalıştırdım.**
-
-**Bu sayede monolitik bir yapı yerine birbirinden ayrı Frontend ve Backend teknolojilerinin birbirleriyle API yardımıyla sorunsuz entegrasyonunu sağlamış oldum."**
